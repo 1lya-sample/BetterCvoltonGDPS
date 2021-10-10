@@ -20,11 +20,11 @@ if($query->rowCount() == 0){
 $id = $query->fetchColumn();
 //rate limiting
 $newtime = time() - 3600;
-/*$query6 = $db->prepare("SELECT count(*) FROM actions WHERE type = '1' AND timestamp > :time AND value2 = :ip");
+$query6 = $db->prepare("SELECT count(*) FROM actions WHERE type = '1' AND timestamp > :time AND value2 = :ip");
 $query6->execute([':time' => $newtime, ':ip' => $ip]);
 if($query6->fetchColumn() > 5){
 	exit("-12");
-}*/
+}
 //authenticating
 $pass = $generatePass->isValidUsrname($userName, $password);
 if ($pass == 1) { //success
