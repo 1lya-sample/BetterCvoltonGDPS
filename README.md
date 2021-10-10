@@ -19,9 +19,6 @@ Required version of PHP: 5.4+ (tested up to 7.3.11)
 3) Edit the links in GeometryDash.exe (some are base64 encoded since 2.1, remember that)
 4) Edit files `/config/connection.php` and `/config/mail.php`
 
-### Need help or found bug?
-https://aptkop.ru/discord
-
 ### Credits
 Original - https://github.com/Cvolton/GMDprivateServer
 
